@@ -16,21 +16,20 @@ public class Get {
     static Set<String> set=new HashSet<String>();
     public static void main(String[] args) throws IOException {
         String res;
-        FileOutputStream out= new FileOutputStream(new File("tes.txt"));
-        for(int i=10000001;i<20000000;i++){
+        FileOutputStream out= new FileOutputStream(new File("tess.txt"));
+        for(int i=10010000;i<10014000;i++){
             if((res=getInfo(Integer.toString(i)))!=null){
                 System.out.println(res);
-            }else{
-                set.forEach(abc -> {
-                    try {
-                        out.write((abc+"\n").getBytes());
-                    } catch (IOException e) {
-                        e.printStackTrace();
-                    }
-                });
-                return;
+                out.write((res+"\n").getBytes());
             }
         }
+     // set.forEach(abc -> {
+     //     try {
+     //         out.write((abc+"\n").getBytes());
+     //     } catch (IOException e) {
+     //         e.printStackTrace();
+     //     }
+     // });
     }
 
     public  static  String getInfo(String userId){
