@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如此设置可以实现对不同手机分辨率的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <title>下拉菜单</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="dropdown text-right">
+                <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                    下拉菜单<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="dropdown-header">CSS部分</li>
+                    <li><a href="javascript:void(0)">JavaScript</a></li>
+                    <li><a href="javascript:void(0)">CSS3</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">JS部分</li>
+                    <li class="active"><a href="javascript:void(0)">HTML5</a></li>
+                    <li class="disabled"><a href="javascript:void(0)">JQuery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row btn-toolbar">
+            <div class="btn-group btn-group-vertical">
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-left"></span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-center"></span>
+                </button>
+                <button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-default">左</button>
+                <div class="btn-group btn-group-sm dropup">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+                        中<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">宝贝</a></li>
+                        <li><a href="javascript:void(0)">店铺</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-default">右</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group"><button class="btn btn-default">我的淘宝</button></div>
+                <div class="btn-group"><button class="btn btn-default">淘宝</button></div>
+                <div class="btn-group"><button class="btn btn-default">宝</button></div>
+                <div class="btn-group"><button class="btn btn-default">宝</button></div>
+            </div>
+        </div>
+    </div>
+
+<!--暂时不用的JS文件放在底部可以提高加载速度-->
+<script type="text/javascript" src="lib/js/jquery.js"  ></script>
+<script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+</body>
+</html>

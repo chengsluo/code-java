@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如此设置可以实现对不同手机分辨率的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--暂时不用的JS文件放在底部可以提高加载速度-->
+    <script type="text/javascript" src="lib/js/jquery.js"  ></script>
+    <script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <title>JS</title>
+    <!--<style type="text/css">-->
+        <!--a { color: #3e8f3e;transiton:color 2s linear; font-size: 18px;font-weight: bold;}-->
+        <!--a:hover {color: #100101;}-->
+    <!--</style>-->
+    <!--<script>-->
+        <!--$(document).ready(function () {-->
+            <!--$(a).bind("transitionend",function () {-->
+                <!--alert("A标签颜色渐变效果结束");-->
+            <!--})-->
+        <!--})-->
+    <!--</script>-->
+</head>
+<body>
+
+    <!--<script type="text/javascript">-->
+        <!--//禁用data-*功能-->
+        <!--//$(document).off(".button.data-api")-->
+
+        <!--//与第三方插件的命名空间冲突-->
+<!--//        var boostrapButton=$.fn.buton.noConflict();-->
+<!--//        $.fn.bootstrapBtn=boostrapButton;-->
+
+        <!--//获取Bt版本号-->
+<!--//        var version=$.fn.tooltip.constructor.VERSION;-->
+
+        <!--//自定义事件-->
+<!--//        $('#myModal').on('show.bs.model',function (e) {-->
+<!--//            alert(e);-->
+<!--//        })-->
+    <!--</script>-->
+
+    <div class="container">
+        <!-- href属性相当与data-target-->
+        <!--toggle触发器-->
+        <button class="btn btn-primary" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-show="false" data-target="#mymodal">点击我</button>
+        <a href="#mymodal" class="btn btn-default" type="button" role="button" data-toggle="modal">点击我</a>
+        <div class="modal fade" id="mymodal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">恭喜您成功注册SHU+</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>现在正在跳转到首页</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="abc">JS触发弹出框</button>
+        <div id="navbar" class="navbar navbar-default">
+            <div class="navbar-header">
+                <a href="javascript:void(0)" class="navbar-brand">滚动监听</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#Home">首页</a></li>
+                    <li><a href="#Video">视频</a></li>
+                    <li><a href="#Pic">图片</a></li>
+                    <li><a href="#Map">地图</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container " style="height:150px;overflow: auto;" data-target="#navbar" data-spy="scroll">
+            <h3 id="Home">首页</h3>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <h3 id="Video">视频</h3>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <h3 id="Pic">图片</h3>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <h3 id="Map">地图</h3>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+            <p>1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw1234567876e2wdsfbgfvdsw</p>
+        </div>
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#A" data-toggle="pill">公告</a></li>
+                <li ><a href="#B" data-toggle="pill">论坛</a></li>
+                <li ><a href="#C" data-toggle="pill">规则</a></li>
+                <li ><a href="#D" data-toggle="pill">公益</a></li>
+            </ul>
+            <br>
+            <ul class="tab-content">
+                <div class="tab-pane active fade in" id="A">公告内容</div>
+                <div class="tab-pane fade" id="B">论坛内容</div>
+                <div class="tab-pane fade" id="C">规则内容</div>
+                <div class="tab-pane fade" id="D">公益内容</div>
+            </ul>
+        </div>
+        <div class="alert alert-info">
+            <button class="close" data-dismiss="alert">&times;</button>
+            alert提示信息
+        </div>
+
+        <div  id="my-alert" class="alert alert-info">
+            alert提示信息
+        </div>
+        <a class="btn btn-default" data-dismiss="alert" data-target="#my-alert">关闭</a>
+
+        <div class="container">
+            <button id="btnLoading" class="btn-success btn" data-loading-text="正在加载...">确定</button>
+        </div>
+        <script>
+            $("#btnLoading").click(function () {
+                $(this).button("loading");
+            })
+        </script>
+
+
+
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+                <input type="radio" name="options">所有
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options">删除
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options">未删除
+            </label>
+        </div>
+
+        <div class="container">
+            <button id="btnLoad" class="btn btn-primary active" data-toggle="button" data-complete-text="加载完成" data-loading-text="正在加载...">
+                按钮
+            </button>
+        </div>
+        <script>
+            $("#btnLoad").click(function () {
+                $(this).button("loading")
+
+                setTimeout(function () {
+                    $("#btnLoad").button("complete");
+                },1000);
+
+            })
+        </script>
+
+
+        <!--折叠效果-->
+        <div class="panel-group" id="panelContainer">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a  data-toggle="collapse" data-parent="#panelContainer" href="#collapsel">标题一</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse in" id="collapse1">
+                    <div class="panel-body">标题一对应内容</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a  data-toggle="collapse" data-parent="#panelContainer" href="#collapse2">标题二</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse " id="collapse2">
+                    <div class="panel-body">标题二对应内容</div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a  data-toggle="collapse" data-parent="#panelContainer" href="#collapse3">标题三</a>
+                    </h4>
+                </div>
+                <div class="panel-collapse collapse in" id="collapse3">
+                    <div class="panel-body">标题三对应内容</div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapse2">点击折叠</button>
+
+
+        <div  id="carouselcontainer"class="carousel" style="height:450px;width: 100%;">
+            <ol class="carousel-indicators">
+                <li class="active" data-target="#carouselcontainer" data-slide-to="0"></li>
+                <li data-target="#carouselcontainer" data-slide-to="1"></li>
+                <li data-target="#carouselcontainer" data-slide-to="2"></li>
+                <li data-target="#carouselcontainer" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" style="height:450px;width: 100%;">
+                <div class="item active">
+                    <a href="##"><img src="static/images/01-03.jpg" alt=""></a>
+                    <div class="carousel-caption">
+                        <h3>一朵莲花</h3>
+                        <p>非常漂亮的睡莲</p>
+                    </div>
+                </div>
+                <div class="item ">
+                    <a href="##"><img src="static/images/01-04.jpg" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="##"><img src="static/images/02-02.jpg" alt=""></a>
+                </div>
+                <div class="item ">
+                    <a href="##"><img src="static/images/02-03.jpg" alt=""></a>
+                </div>
+            </div>
+            <a href="#carouselcontainer" class="left carousel-control" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" ></span>
+            </a>
+            <a href="#carouselcontainer" class="right carousel-control" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" ></span>
+            </a>
+        </div>
+
+
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $("#abc").click(function () {
+    $('#mymodel').on('shown.bs.modal', function (e) {
+        $(this).css('display', 'block');
+        var modalHeight=$(window).height() / 2 - $('#youModel .modal-dialog').height() / 2;
+        $(this).find('.modal-dialog').css({
+            'margin-top': modalHeight
+        });
+    });
+
+    $('#mymodal').modal({backdrop: 'static', keyboard: false});
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>

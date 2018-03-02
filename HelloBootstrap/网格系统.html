@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如此设置可以实现对不同手机分辨率的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <title>网格系统</title>
+    <style type="text/css">
+        .rowfirst{ height:50px;}
+        .nestedrow{ background-color: #CFC7D8;border: 1px solid #0000ff;height: 25px;}
+        .row{background-color: #CFC7D8;border: 1px solid #0000ff;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">第一行</div>
+            <div class="col-lg-8 col-sm-8">第一行</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-4">第二行</div>
+            <div class="col-lg-4 col-sm-4">第二行</div>
+            <div class="col-lg-4 col-sm-4">第二行</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-3 col-lg-offset-3 col-sm-offset-3">第三行</div>
+            <div class="col-lg-3 col-sm-3">第三行</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-lg-push-2">第一列</div>
+            <div class="col-lg-2 col-lg-pull-2">第二列</div>
+            <div class="col-md-6 rowfirst">
+                <div class="row">
+                    <div class="col-md-6 nestedrow">内嵌一列</div>
+                    <div class="col-md-6 nestedrow">内嵌二列</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--暂时不用的JS文件放在底部可以提高加载速度-->
+    <script type="text/javascript" src="lib/js/jquery.js"  ></script>
+    <script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+</body>
+</html>

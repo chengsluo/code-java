@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如此设置可以实现对不同手机分辨率的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>教务管理</title>
+</head>
+<body>
+<div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+        <div>
+            <p class="logo-name">SHU</p>
+        </div>
+        <h3>教务管理系统</h3>
+        <p>欢迎上海大学的用户</p>
+        <p>登录这里,一键搞定课程相关!</p>
+        <form class="m-t" role="form">
+            <div class="form-group">
+                <input type="text" id="studentId" class="form-control" placeholder="上海大学工号/学号" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" class="form-control" placeholder="SHU+密码" required="">
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b" onclick="login">登录</button>
+
+            <a href="/forgetPassword"><small>忘记密码?</small></a>
+            <p class="text-muted text-center"><small>您还没有账户?</small></p>
+            <a class="btn btn-sm btn-white btn-block" href="register">创建新账户</a>
+        </form>
+        <p class="m-t"> <small>Shanghai University &copy; 2017-2027</small> </p>
+    </div>
+</div>
+<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <br>
+        <div class="pull-right">
+            由 <strong>Chengs Luo</strong> 团队开发
+        </div>
+        <div>
+            <strong>版权所有</strong> 上海大学 Shanghai University &copy; 2017-2027
+        </div>
+    </div>
+</nav>
+<!--暂时不用的JS文件放在底部可以提高加载速度-->
+<script type="text/javascript" src="lib/js/jquery.js"  ></script>
+<script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+</body>
+</html>

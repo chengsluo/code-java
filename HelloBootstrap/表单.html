@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--如此设置可以实现对不同手机分辨率的支持-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0  ,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="lib/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <script src="lib/js/respond.js"></script>
+    <![endif]-->
+    <title>表单</title>
+</head>
+<body>
+    <div class="container form-inline">
+        <div class="form-group has-warning">
+            <label for="txtUserName">用户名</label>
+            <input type="text" class="form-control" id="txtUserName" placeholder="请输入用户名">
+
+        </div>
+        <div class="form-group">
+            <label for="txtPassword">密码</label>
+            <input type="password" class="form-control" id="txtPassword" placeholder="请输入密码">
+        </div>
+    </div>
+    <div class="container form-horizontal">
+        <div class="row has-warning has-feedback">
+            <label class="control-label col-lg-1">用户名</label>
+            <div class="col-lg-3">
+                <input type="text" class="form-control" id="txtUserName1" placeholder="请输入用户名">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+                <span class="sr-only">验证失败</span>
+            </div>
+        </div>
+        <div class="row">
+            <label class="control-label col-lg-1">密码</label>
+            <div class="col-lg-3">
+                <input type="password" class="form-control" id="txtPassword1" placeholder="请输入密码">
+            </div>
+        </div>
+        <div class="row has-warning">
+            <label class="control-label col-lg-1">时间</label>
+            <div class="col-lg-3">
+                <input type="date" class="form-control" >
+            </div>
+        </div>
+        <div class="row has-error">
+            <label class="control-label col-lg-1">性别</label>
+            <div class="col-lg-2  col-lg-offset-1">
+                <select class="form-control" >
+                    <option>男</option>
+                    <option>女</option>
+                </select>
+            </div>
+        </div>
+        <div class="row has-success">
+            <label class="control-label col-lg-1">留言</label>
+            <div class="col-lg-3">
+                <textarea class="form-control" rows="4" disabled="disabled"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn btn-default">基础按钮</button>
+            <a href="网格系统.html" class="btn btn-default" role="button" >网格系统</a>
+            <input type="button" class="btn btn-default btn-sm" value="INPUT按钮">
+            <input type="button" class="btn btn-warning" value="INPUT按钮">
+        </div>
+        <div class="row">
+            <button class="btn btn-block bg-primary btn-lg">块状按钮</button>
+        </div>
+        <div class="row">
+            <button class="btn  btn-default " disabled="disabled">块状按钮</button>
+            <button class="btn btn-default hover">块状按钮</button>
+            <button class="btn  btn-default active">块状按钮</button>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="static/images/InternetPortrait.png" alt="" class="img-rounded img-responsive">
+                <div>默认图片</div>
+            </div>
+            <div class="col-sm-4">
+                <img src="static/images/InternetPortrait.png" alt="" class="img-circle img-responsive">
+                <div>默认图片</div>
+            </div>
+            <div class="col-sm-4">
+                <img src="static/images/InternetPortrait.png" alt="" class="img-thumbnail img-responsive">
+                <div>缩略图</div>
+            </div>
+            <div class="col-sm-4">
+                <img src="static/images/InternetPortrait.png" alt="" class="img-responsive" style="width: 40px;height: 40px;">
+                <div>响应式</div>
+            </div>
+        </div>
+        <div class="row">
+            <a href="网格系统.html" class="btn btn-default" role="button"><span class="glyphicon glyphicon-search"></span></a>
+            <a href="网格系统.html" class="btn btn-default glyphicon glyphicon-search" role="button"></a>
+            <span  class="glyphicon glyphicon-search"></span>
+        </div>
+        <div class="row">
+            <div class="input-group col-lg-4 ">
+                <span   class="input-group-addon"><a type="button" class="link-primary" >免费获取验证码</a></span>
+                <input type="text" class="form-control" placeholder="用户名">
+                <span class="input-group-addon" id="basic-addon2">@gmail.com</span>
+            </div>
+            <div class="input-group col-lg-4">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        请选择<span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝贝</a></li>
+                        <li><a href="#">店铺</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="输入关键词">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                </span>
+            </div>
+            <div class="input-group col-lg-4">
+                <div class="input-group-btn dropdown">
+                    <span class="btn-default btn">请选择</span>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">宝贝</a></li>
+                        <li><a href="#">店铺</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" placeholder="输入关键词">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">搜索</button>
+                </span>
+            </div>
+        </div>
+    </div>
+<!--暂时不用的JS文件放在底部可以提高加载速度-->
+<script type="text/javascript" src="lib/js/jquery.js"  ></script>
+<script type="text/javascript" src="lib/js/bootstrap.js" ></script>
+</body>
+</html>
